@@ -82,10 +82,10 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 		var = check_sub_tree_Right(tree->right, tree->n);
 		if (var == 0)
 			return (0);
-	
-	right = binary_tree_is_bst(tree->right);
+		right = binary_tree_is_bst(tree->right);
 	}
-	if (left != 2 || right != 2)
+	if (left != 2 || righ
+t != 2)
 	{
 		if (left == 0 || right == 0)
 			return (0);
